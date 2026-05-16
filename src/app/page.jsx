@@ -48,7 +48,8 @@ export default  function Home() {
             </div>
         </div>
         <div className="border-t-2 border-gray-100 mt-10">
-          <Suspense fallback={<span className="loading loading-bars loading-xl"></span>}>
+          <Suspense fallback={<div className="flex justify-center items-center py-10">
+                                  <span className="loading loading-bars loading-xl"></span></div>}>
             <FriendCards></FriendCards>
           </Suspense>
         </div>

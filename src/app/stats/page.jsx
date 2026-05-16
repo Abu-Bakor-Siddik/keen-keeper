@@ -2,6 +2,7 @@
 
 import { Pie, PieChart } from "recharts";
 import { useTimeline } from "@/context/TimelineContext";
+import { FaCircle } from "react-icons/fa";
 
 const FriendshipAnalytics = () => {
   const { timeline } = useTimeline();
@@ -36,27 +37,34 @@ const FriendshipAnalytics = () => {
   ];
 
   return (
-    <div className="max-w-3xl mx-auto mt-10 text-center">
-      <h1 className="text-4xl font-bold mb-10">
+    <div className="max-w-3xl mx-auto mt-10 text-center ">
+      <h1 className="text-4xl font-bold mb-10 text-start">
         Friendship Analytics
       </h1>
-
-      <div className="flex justify-center">
-        <PieChart
-          width={400}
-          height={400}
-        >
-          <Pie
-            data={analyticsData}
-            dataKey="value"
-            nameKey="name"
-            innerRadius="70%"
-            outerRadius="100%"
-            paddingAngle={5}
-            cornerRadius="10"
-            isAnimationActive={true}
-          />
-        </PieChart>
+      <div className="bg-base-200 p-10 rounded-2xl shadow">
+        <p className="flex text-start">By Interaction type</p>
+        <div className="flex justify-center">
+            <PieChart
+            width={400}
+            height={400}
+            >
+            <Pie
+                data={analyticsData}
+                dataKey="value"
+                nameKey="name"
+                innerRadius="70%"
+                outerRadius="100%"
+                paddingAngle={5}
+                cornerRadius="10"
+                isAnimationActive={true}
+            />
+            </PieChart>
+        </div>
+        <div className="flex gap-10 justify-center mt-10">
+            <p className="flex items-center gap-2"><FaCircle color="#3b82f6" /> Text</p>
+            <p className="flex items-center gap-2"><FaCircle color="#22c55e" /> Call</p>
+            <p className="flex items-center gap-2"><FaCircle color="#ef4444"/> Video</p>
+        </div>
       </div>
 
 

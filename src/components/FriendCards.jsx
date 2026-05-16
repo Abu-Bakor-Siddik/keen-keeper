@@ -6,7 +6,7 @@ const FriendCards = async() => {
     return (
         <div className='mt-5'>
             <h2 className='text-2xl font-bold md:text-start text-center'>Your Friends</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 container mx-auto mt-5 ">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 container mx-auto mt-5">
                 {
                     friends.map((friend) => <FriendCard key={friend.id} friend={friend}></FriendCard> )
                 }

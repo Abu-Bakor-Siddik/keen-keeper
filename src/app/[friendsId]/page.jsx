@@ -1,8 +1,7 @@
 import QuickCheckIn from "@/components/QuickCheckIn";
 import Image from "next/image";
-import { FiArchive, FiPhoneCall } from "react-icons/fi";
-import { LuVideo } from "react-icons/lu";
-import { MdOutlineTextsms } from "react-icons/md";
+import { notFound } from "next/navigation";
+import { FiArchive } from "react-icons/fi";
 import { RiDeleteBinLine, RiNotificationSnoozeLine } from "react-icons/ri";
 
 const FriendsDetails = async ({ params }) => {
@@ -12,6 +11,9 @@ const FriendsDetails = async ({ params }) => {
   });
   const friends = await res.json();
   const friend = friends.find((friend) => friend.id === Number(friendsId));
+  if (!friend) {
+  notFound();
+}
   const {id, picture, name, bio, email, tags, status,days_since_contact,goal,next_due_date} = friend;
 
   const handleStatus = () => {
