@@ -1,7 +1,9 @@
 "use client";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { IoMenu } from "react-icons/io5";
+import { GoGraph } from "react-icons/go";
+import { IoMenu, IoTimeOutline } from "react-icons/io5";
+import { RiHome2Line } from "react-icons/ri";
 
 const Navbar = () => {
   const pathname = usePathname();
@@ -12,21 +14,21 @@ const Navbar = () => {
         <Link
           className={`${pathname === "/" ? "bg-green-800 text-white" : ""} text-gray-500 `}
           href="/">
-          Home
+          <RiHome2Line />Home
         </Link>
       </li>
       <li>
         <Link
           className={`${pathname === "/timeline" ? "bg-green-800 text-white" : ""} text-gray-500`}
           href="/timeline">
-          Timeline
+          <IoTimeOutline />Timeline
         </Link>
       </li>
       <li>
         <Link
           className={`${pathname === "/stats" ? "bg-green-800 text-white" : ""} text-gray-500`}
           href="/stats">
-          Stats
+          <GoGraph />Stats
         </Link>
       </li>
     </>
