@@ -6,7 +6,7 @@ import { RiDeleteBinLine, RiNotificationSnoozeLine } from "react-icons/ri";
 
 const FriendsDetails = async ({ params }) => {
   const { friendsId } = await params;
-  const res = await fetch("http://localhost:3000/friendsData.json", {
+  const res = await fetch("https://keen-keeper-one-tan.vercel.app/friendsData.json", {
     cache: "no-store",
   });
   const friends = await res.json();

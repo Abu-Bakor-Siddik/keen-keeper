@@ -42,6 +42,12 @@ const TimelinePage = () => {
   return (
     <div className="max-w-3xl mx-auto mt-10 px-5">
       <h2 className="text-4xl font-bold mb-8">Timeline</h2>
+      <select defaultValue="Pick a color" className="select">
+        <option disabled={true}>Pick a color</option>
+        <option>Crimson</option>
+        <option>Amber</option>
+        <option>Velvet</option>
+    </select>
         <div className="dropdown dropdown-start">
             <div tabIndex={0} role="button" className="btn m-1 gap-2">{filter} <RiArrowDropDownLine /> </div>
             <ul tabIndex="-1" className="dropdown-content menu bg-base-100 rounded-box z-1 w-25 gap-2 p-2 shadow-sm">
