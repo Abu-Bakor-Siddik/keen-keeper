@@ -28,6 +28,17 @@ const TimelinePage = () => {
     }
   };
 
+  if (!timeline || timeline.length === 0) {
+  return (
+    <div className="text-center mt-10 p-40 container mx-auto bg-base-200 rounded-2xl">
+      <h2 className="text-3xl font-bold">No Timeline Found</h2>
+      <p className="text-gray-500 mt-2">
+        Start a Call, Text, or Video check in to add them in your timeline.
+      </p>
+    </div>
+  );
+}
+
   return (
     <div className="max-w-3xl mx-auto mt-10 px-5">
       <h2 className="text-4xl font-bold mb-8">Timeline</h2>
