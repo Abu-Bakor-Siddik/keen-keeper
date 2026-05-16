@@ -4,12 +4,21 @@ import { FiPhoneCall } from "react-icons/fi";
 import { MdOutlineTextsms } from "react-icons/md";
 import { LuVideo } from "react-icons/lu";
 import { toast } from "react-toastify";
+import { useTimeline } from "@/context/TimelineContext";
 
-const QuickCheckIn = ({ id, name }) => {
+const QuickCheckIn = ({id, name }) => {
 
+     const { addTimelineEntry } = useTimeline();
 
-  const handleCheckIn = (label) => {
-    toast.success(`${label} check-in with ${name}`);
+  const handleCheckIn = (type) => {
+    const entry = {
+      id: id,
+      type,
+      title: `${type} with ${name}`,
+      date: new Date().toLocaleDateString(),
+    };
+    addTimelineEntry(entry);
+    toast.success(`${type} check-in with ${name}`);
   };
 
   return (
