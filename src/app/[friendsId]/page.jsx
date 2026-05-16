@@ -1,3 +1,4 @@
+import QuickCheckIn from "@/components/QuickCheckIn";
 import Image from "next/image";
 import { FiArchive, FiPhoneCall } from "react-icons/fi";
 import { LuVideo } from "react-icons/lu";
@@ -11,7 +12,7 @@ const FriendsDetails = async ({ params }) => {
   });
   const friends = await res.json();
   const friend = friends.find((friend) => friend.id === Number(friendsId));
-  const { picture, name, bio, email, tags, status,days_since_contact,goal,next_due_date} = friend;
+  const {id, picture, name, bio, email, tags, status,days_since_contact,goal,next_due_date} = friend;
 
   const handleStatus = () => {
     if (status === "overdue") {
@@ -35,7 +36,7 @@ const FriendsDetails = async ({ params }) => {
     }
   };
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mb-10">
       <div>
         <div className="card bg-base-100  shadow-sm mt-2 mx-10 md:mx-0">
           <div className="avatar flex justify-center items-center p-2">
@@ -107,20 +108,7 @@ const FriendsDetails = async ({ params }) => {
         </div>
         <div className="shadow  p-5 mt-10 md:mx-0 mx-10">
             <h2 className="mb-3">Quick Check-In</h2>
-            <div className="flex justify-between text-center ">
-                <div className="shadow rounded-2xl p-5 bg-base-200 items-center flex flex-col flex-1">
-                    <FiPhoneCall/>
-                    <p>Call</p>
-                </div>
-                <div className="shadow rounded-2xl p-5 bg-base-200 items-center flex flex-col flex-1 ml-4">
-                    <MdOutlineTextsms />
-                    <p>Text</p>
-                </div>
-                <div className="shadow rounded-2xl p-5 bg-base-200 items-center flex flex-col flex-1 ml-4">
-                    <LuVideo />
-                    <p>Video</p>
-                </div>
-            </div>
+            <QuickCheckIn id={id} name={name}></QuickCheckIn>
         </div>
       </div>
 
