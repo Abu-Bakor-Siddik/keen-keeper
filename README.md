@@ -1,7 +1,7 @@
 Project name : Keen Keeper
 
 Description:
-A personal relationship management app to help you stay connected with the people who matter most — track friends, log interactions, and never let an important relationship slip away.
+A personal relationship management app to help you stay connected with the people who matter most track friends, log interactions, and never let an important relationship slip away.
 
 Technologies:
 1. Next.js
