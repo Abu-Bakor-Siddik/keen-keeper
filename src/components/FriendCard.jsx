@@ -17,8 +17,8 @@ const FriendCard = ({ friend }) => {
 }
   
   return (
-    <Link href={`../${id}`}>
-      <div className="card bg-base-100  shadow-sm mt-2 mx-10 md:mx-0">
+    <Link href={`../${id}`} className="h-full">
+      <div className="card bg-base-100 h-full  shadow-sm mt-2 mx-10 md:mx-0">
         <div className="avatar flex justify-center items-center p-4">
           <div className="ring-offset-base-100  rounded-full ring-0 ring-offset-2">
             <Image
