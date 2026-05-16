@@ -1,6 +1,8 @@
+import FriendCards from "@/components/FriendCards";
+import { Suspense } from "react";
 import { TiPlus } from "react-icons/ti";
 
-export default function Home() {
+export default  function Home() {
   return (
     <div>
       <main>
@@ -22,7 +24,7 @@ export default function Home() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 mt-5 text-center mx-10">
             <div className="stats shadow p-5">
               <div className="stat">
-                <div className="stat-value">10</div>
+                <div className="stat-value">8</div>
                 <div className="stat-desc text-[#64748B] ">Total Friends</div>
               </div>
             </div>
@@ -45,8 +47,10 @@ export default function Home() {
               </div>
             </div>
         </div>
-        <div>
-          
+        <div className="border-t-2 border-gray-100 mt-10">
+          <Suspense fallback={<span className="loading loading-bars loading-xl"></span>}>
+            <FriendCards></FriendCards>
+          </Suspense>
         </div>
       </main>
     </div>

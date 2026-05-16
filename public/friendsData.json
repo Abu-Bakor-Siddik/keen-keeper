@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "name": "Rafi Ahmed",
+    "picture": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e",
+    "email": "rafi.ahmed@example.com",
+    "days_since_contact": 28,
+    "status": "overdue",
+    "tags": ["school friend", "football buddy"],
+    "bio": "High school best friend. We used to play football every weekend.",
+    "goal": 14,
+    "next_due_date": "2026-04-20"
+  },
+  {
+    "id": 2,
+    "name": "Sara Khan",
+    "picture": "https://images.unsplash.com/photo-1544005313-94ddf0286df2",
+    "email": "sara.khan@example.com",
+    "days_since_contact": 10,
+    "status": "almost due",
+    "tags": ["college", "study partner"],
+    "bio": "Met in university during group studies. Always helped each other in exams.",
+    "goal": 14,
+    "next_due_date": "2026-05-20"
+  },
+  {
+    "id": 3,
+    "name": "John Miller",
+    "picture": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d",
+    "email": "john.miller@example.com",
+    "days_since_contact": 5,
+    "status": "on-track",
+    "tags": ["work", "colleague"],
+    "bio": "Work colleague from my internship. We collaborate on frontend projects.",
+    "goal": 14,
+    "next_due_date": "2026-06-01"
+  },
+  {
+    "id": 4,
+    "name": "Ayesha Rahman",
+    "picture": "https://images.unsplash.com/photo-1524504388940-b1c1722653e1",
+    "email": "ayesha.rahman@example.com",
+    "days_since_contact": 40,
+    "status": "overdue",
+    "tags": ["close friend"],
+    "bio": "University friend. We used to attend coding competitions together.",
+    "goal": 21,
+    "next_due_date": "2026-04-10"
+  },
+  {
+    "id": 5,
+    "name": "David Kim",
+    "picture": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d",
+    "email": "david.kim@example.com",
+    "days_since_contact": 12,
+    "status": "almost due",
+    "tags": ["online friend"],
+    "bio": "Met on a dev forum. We often discuss React and backend architecture.",
+    "goal": 14,
+    "next_due_date": "2026-05-18"
+  },
+  {
+    "id": 6,
+    "name": "Maria Lopez",
+    "picture": "https://images.unsplash.com/photo-1544723795-3fb6469f5b39",
+    "email": "maria.lopez@example.com",
+    "days_since_contact": 3,
+    "status": "on-track",
+    "tags": ["language exchange", "friend"],
+    "bio": "Language exchange partner. We practice English and Spanish weekly.",
+    "goal": 7,
+    "next_due_date": "2026-05-25"
+  },
+  {
+    "id": 7,
+    "name": "Tanvir Hasan",
+    "picture": "https://images.unsplash.com/photo-1552374196-c4e7ffc6e126",
+    "email": "tanvir.hasan@example.com",
+    "days_since_contact": 30,
+    "status": "overdue",
+    "tags": ["childhood friend", "neighbor"],
+    "bio": "Grew up in the same neighborhood. Childhood memories are unforgettable.",
+    "goal": 21,
+    "next_due_date": "2026-04-25"
+  },
+  {
+    "id": 8,
+    "name": "Emily Chen",
+    "picture": "https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e",
+    "email": "emily.chen@example.com",
+    "days_since_contact": 6,
+    "status": "on-track",
+    "tags": ["startup", "mentor"],
+    "bio": "Met at a startup event. She gives great career advice and mentorship.",
+    "goal": 14,
+    "next_due_date": "2026-06-05"
+  }
+]
